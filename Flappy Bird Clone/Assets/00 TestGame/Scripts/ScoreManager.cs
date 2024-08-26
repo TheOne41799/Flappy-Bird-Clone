@@ -37,6 +37,7 @@ public class ScoreManager : MonoBehaviour
 
     private void Start()
     {
+        //PlayerPrefs.DeleteAll();
         currentScoreValueText.text = score.ToString();
         bestScoreValueText.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
 
